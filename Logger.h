@@ -9,10 +9,13 @@
 
 #define LOG_LINE_STEP 1000000
 
-//#define LOG_LEVEL 0
+#ifndef LOG_LEVEL
+#define LOG_LEVEL 0
+#endif
 
+#ifndef STOP_ON_ERROR
 #define STOP_ON_ERROR true
-
+#endif
 
 #define ERROR(s, ...) { fprintf(stderr,"Error: "); fprintf(stderr, s, ##__VA_ARGS__); fprintf(stderr,"\nIn %s line %d\n", __FILE__, __LINE__); if (STOP_ON_ERROR) { WTF; } }
 #define WARN(s, ...) { fprintf(stderr, "WARNING: "); fprintf(stderr, s, ##__VA_ARGS__); fprintf(stderr,"\n");  }

@@ -6,7 +6,7 @@ int main()
 
   LOG("TEST");
   LOG1("TEST1");
-  ERROR("TEST2");
+  LOG2("TEST2");
   printf("Test\n");
   return 0;
 }
