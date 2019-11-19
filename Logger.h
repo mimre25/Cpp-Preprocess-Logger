@@ -9,7 +9,7 @@
 
 #define LOG_LINE_STEP 1000000
 
-#define LOG_LEVEL 0
+//#define LOG_LEVEL 0
 
 #define STOP_ON_ERROR true
 
