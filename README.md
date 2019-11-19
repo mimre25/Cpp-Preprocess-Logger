@@ -49,7 +49,7 @@ int main()
   return 0;
 }
 ```
-Below the output of compilation with different LOG_LEVEL variables shows the different size of the assembly output, ie the NOPs not included.
+Below the output of compilation with different `LOG_LEVEL` variables shows the different size of the assembly output, ie the NOPs not included.
 
 ```
 mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=0 -O0 main.cpp -S && ls -lh main.s
@@ -62,22 +62,22 @@ mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=3 -O0 main.cpp -S &&
 -rwxrwxr-x 1 mimre mimre 447 Nov 19 09:12 main.s
 ```
 
-Below the output depending on the LOG_LEVEL
+Below the output depending on the `LOG_LEVEL`
 
 ```
-mimre@hpc-vis-1:~/tmp/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=0 main.cpp -o main && ./main
+mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=0 main.cpp -o main && ./main
 LOG: TEST
 LOG: TEST1
 LOG: TEST2
 Test
-mimre@hpc-vis-1:~/tmp/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=1 main.cpp -o main && ./main
+mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=1 main.cpp -o main && ./main
 LOG: TEST1
 LOG: TEST2
 Test
-mimre@hpc-vis-1:~/tmp/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=2 main.cpp -o main && ./main
+mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=2 main.cpp -o main && ./main
 LOG: TEST2
 Test
-mimre@hpc-vis-1:~/tmp/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=3 main.cpp -o main && ./main
+mimre@hpc-vis-1:~/Cpp-Preprocessor-Logger$ g++ -D LOG_LEVEL=3 main.cpp -o main && ./main
 Test
 ```
 
