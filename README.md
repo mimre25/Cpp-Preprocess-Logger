@@ -12,7 +12,7 @@ ERROR("This is an error message, it won't get 'NOPed' out");
 ```
 
 Please note that every macro automatically adds its name and a ':' before the output and a '\n' at the end.
-The code above with a LOG_LEVEL of 0 produces:
+The code above with a `LOG_LEVEL` of 0 produces:
 
 ```
 LOG: This is a simple level 0 log
