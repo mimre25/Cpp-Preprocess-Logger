@@ -2,7 +2,7 @@
 A simple C++ preprocessor logger that allows to set a log level and converts everything below the level to NOPs
 
 
-##Usage
+## Usage
 Just include the header and then use the macros as so:
 
 ```
@@ -30,7 +30,7 @@ Other Macros inside `Logger.h`:
 * `REPORT` - Similar to warning.
 * `HIGHLIGHT` - For Highlighted outputs using a color.
 
-##Example/Optimization
+## Example/Optimization
 
 The file main.cpp shows an example. 
 
