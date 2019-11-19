@@ -22,7 +22,7 @@ In <filename> line <line number>
 ```
 
 The `LOG_LEVEL` can be set in Logger.h, or during compilation by adding `-D LOG_LEVEL=<level>`
-Another Handy variable is `STOP_ON_ERROR`, which can be set similarily to `LOG_LEVEL`, but to either true or false. If it is set to true, then the program will halt on an ERROR.
+Another Handy variable is `STOP_ON_ERROR`, which can be set similarily to `LOG_LEVEL`, but to either true or false. If it is set to true, then the program will halt on an `ERROR`.
 
 Other Macros inside `Logger.h`:
 
