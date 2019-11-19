@@ -1,5 +1,5 @@
 # Cpp-Preprocessor-Logger
-A simple C++ preprocessor logger that allows to set a log level and converts everything below the level to NOPs
+A simple C++ preprocessor logger that allows to set a log level and converts everything below the level to NOPs.
 
 
 ## Usage
